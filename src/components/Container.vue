@@ -45,11 +45,6 @@ import _ from 'lodash'
 export default {
   name: 'Container',
 
-  mounted() {
-    if (localStorage.name) {
-      this.name = localStorage.name;
-    }
-  },
   computed: {
     orderedList: function () {
       var search = this.search
